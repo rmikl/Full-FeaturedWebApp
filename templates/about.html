@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>about page </title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+        <h1>{{ post.tytul }}</h1>
+        <p> {{ post.autor }} on   {{ post.data }}</p>
+        <p> {{ post.zawartosc }}</p>
+    {% endfor %}
+{% endblock content %}
