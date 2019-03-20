@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
-    {% for post in posts %}
-        <h1>{{ post.tytul }}</h1>
-        <p> {{ post.autor }} on   {{ post.data }}</p>
-        <p> {{ post.zawartosc }}</p>
-    {% endfor %}
+	{% for post in posts %}
+	{{ post.autor }}
+	{{ post.data }}
+	{% endfor %}
 {% endblock content %}
